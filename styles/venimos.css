@@ -1,0 +1,172 @@
+.venimos{
+    position: relative;
+    padding: 0 16px;
+}
+
+.venimos img{
+    width: 360px;
+    height: 519px;
+    position: absolute;
+    top: -95.5px;
+    left: -20px;
+    z-index: 1;
+
+}
+.vacio{
+    height: calc(519px - 95.5px);
+    margin: auto;
+}
+.texto{
+    width: 100%;
+}
+.venimos h2{
+    margin-top: 27px;
+    margin-bottom: 8px;
+    font-family: 'ibm_plex_sansregular';
+    width: auto;
+    height: 84px;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+
+}
+
+.venimos p{
+    font-family: 'ibm_plex_monoregular';
+    width: 100%;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-weight: 500;
+}
+.invitadas div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.invitadas h2{
+    font-family: 'ibm_plex_sansregular';
+    width: auto;
+    height: 84px;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    margin: 54px 0 14px 16px;
+}
+.invitadas img{
+    width: 100%;
+}
+@media screen and (min-width:400px){
+    .texto{
+        max-width: 100%;
+        margin: auto;
+    }
+    .texto h2{
+        height: auto;
+    }
+    .venimos img.phone{
+        position: static;
+        display: block;
+        max-width: 410px;
+        margin:auto;
+        margin-top:-80px ;
+    }
+    .venimos{
+        padding: 0 10%;
+    }
+    .vacio{
+        display: none;
+    }
+    /* *********INVITADAS******** */
+    .invitadas h2{
+    
+        margin-bottom: 0;
+        margin-left: 5%;
+    }
+}
+@media screen and (min-width:768px){
+   
+   .venimos img.phone{
+        position: static;
+        margin-top: -90px;
+        margin-left: 8.89%;
+        width: 29.78%;
+        height: 45.83%;
+    }
+    .venimos{
+        display: flex;
+        padding: 0px;
+    }
+    .vacio{
+        display: none;
+    }
+    .venimos p, .venimos h2{
+        max-width: 40.22vw;
+        margin-right: 17.78%;
+        margin-left: 4.33vw;
+    }
+    .venimos .texto{
+        display: flex;
+        flex-wrap: wrap;
+        margin: unset;
+        margin-top: -60px;
+        flex-direction: column;
+        justify-content: center;
+    } 
+/*************INVITADAS************  */
+    .invitadas h2{
+    
+        margin-bottom: 0;
+        margin-left: 13.89%;
+    }
+    .invitadas img:nth-child(n){
+        max-width: 50%;
+    }
+  
+}
+
+@media screen and (min-width:1366px){
+    .venimos img.phone{
+        
+        margin-top: -168.6px;
+        margin-left: 13.89%;
+        width: 31.78vw;
+        height: 45.83vw;
+        max-width: unset;
+    }
+    .venimos .texto{
+        justify-content: flex-start;
+        margin-top:20.4px ;
+
+    }
+ 
+    .venimos h2{
+        width: 29.71vw;
+        font-size: 48px;
+        line-height: 62px;
+        margin-bottom: 24px;
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .venimos p{
+        width: 32.22vw;
+        margin-right: 0;
+        line-height: 24px;
+        font-size: 16px;
+    }
+    /*************INVITADAS************  */
+    .invitadas h2{
+    
+        margin-bottom: 36px;
+        margin-top: 64px;
+        margin-left: 13.89%;
+        font-size: 48px;
+        line-height: 62px;
+        width: 33.40%;
+    }
+    .invitadas img:nth-child(n){
+        max-width: 33.33%;
+    }
+}

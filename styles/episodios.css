@@ -1,0 +1,120 @@
+.episodios{
+    position: relative;
+}
+.episodios::after{
+    content: '';
+	width: 100%;
+	height: calc(100% - (100vw * 0.1051));
+	position: absolute;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    z-index: -1;
+    top: 0;
+    transform-origin: top right;
+    transform: skewY(-6deg);
+}
+
+.episodios h2{
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-family: 'ibm_plex_sansregular';
+    top: 64px;
+    left: 5%;
+    position: absolute;
+    z-index: 1;
+    font-weight: 500;
+}
+.episodios .spoty iframe{
+    width: 100%;
+    border: 0;
+}
+.spoty{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 2.5%;
+
+}
+iframe{
+    margin-bottom: 11px;
+}
+iframe:nth-child(1){
+    margin-top: 127px;
+}
+iframe:nth-child(4){
+    margin-bottom: 143.5px;
+}
+.poligon{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    /* height: calc(100% - (100vw * 0.1051)); */
+
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    transform: skewY(-6deg);
+    transform-origin: top right;
+    z-index: -1;
+    overflow: hidden;
+}
+/* CELULAR */
+@media screen and (min-width:321px ){
+    .episodios h2 {
+      left: 3%;
+    } 
+  
+  }
+/* TABLET */
+@media screen and (min-width:768px ){
+  .episodios h2 {
+    left: 13.9%;
+    top: 125px;
+  }
+  iframe:nth-child(n){
+    flex: 1;
+    margin-bottom: 0;
+    /* min-width: 346px; */
+    max-width: 584px;
+    flex-basis: 34%;
+  }
+
+  iframe:nth-child(1){
+      margin-top: 186px;
+      margin-left: 6.94%;
+  }
+  iframe:nth-child(3){
+      margin-left: 6.94%;
+  }
+  iframe:nth-child(2),iframe:nth-child(4){
+      align-self: flex-end;
+      margin-left: 5%;
+      margin-right: 6.94%;
+  }
+  iframe:last-child{
+      margin-bottom: 140px;
+  }
+  iframe:nth-child(3),iframe:nth-child(4){
+      margin-top:5% ;
+    }
+    .spoty{
+       padding:0;
+    }
+
+}
+/* DESKTOP */
+@media screen and (min-width:1360px){
+    .episodios h2{
+        font-size: 48px;
+        line-height: 62px;
+        top: 186px;
+    }
+    iframe:nth-child(1){
+        margin-top: 274px;
+    }
+    iframe:last-child{
+        margin-bottom: 232.6px;
+    }
+}

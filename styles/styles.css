@@ -1,0 +1,175 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+}
+button{
+    border: none;
+}
+button:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: #FFFFFF;
+}
+/* ------------------PRIMERA PAGINA------------- */
+
+.first_page{
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 16px;
+    padding-top: 0;
+    margin-top: 29px;
+    letter-spacing: 0;
+    padding-bottom: 0;
+    margin-bottom: 24px;
+}
+
+.first_page:nth-child(n):nth-child(n){
+    color: #060A24;
+}
+
+/* ----------PARRAFO-------- */
+
+
+
+.first_page p span{
+    display: none;
+}
+#span2{
+    display: inline;
+    text-decoration: none;
+}
+/* SPAN */
+
+.first_page span,.first_page h2{
+    font-family: 'ibm_plex_sansregular';
+    font-size: 36px;
+    height: 42px;
+}
+
+.first_page h2{
+    width: 85px;
+    /* *h2* */
+    font-weight: 500;
+    display: contents;
+}
+.hello p span:nth-child(1){
+    display: none;
+}
+
+.first_page span:nth-child(2){
+    text-decoration: line-through;
+    width: 101px;
+}
+.first_page span:nth-child(3){
+    width: 212px;
+}
+
+.first_page span:nth-child(4){
+    width: 10px;
+
+}
+/* *************** */
+.first_page p span, .first_page p{
+    font-family: 'ibm_plex_monoregular';
+    margin: auto;
+    margin-top: 16px;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-size: 14px;
+}
+.first_page p{
+
+    width: 288px;
+    height: 66px;
+    margin-bottom: 36px;
+}
+
+/* ----------BOTON-------- */
+.first_page button{
+    background-color:  #00F3BB;
+    font-family: 'ibm_plex_monomedium';
+    width: 288px;
+    height: 48px;
+    font-size: 16px;
+    margin: auto;
+}
+
+
+/* RESPONSIVE */
+@media screen and (min-width: 321px) {
+    .hello, .first_page p,.first_page button {
+        margin-left: 3%;
+    }
+    .first_page p{
+        width: 75%;
+        height: unset;
+    }
+
+}
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+
+    .hello, .first_page p, .first_page button{
+        margin-left: 13.9%;
+    }
+    .first_page p{
+        width: 43.61%;
+    }
+    input{
+        display: none;
+    }
+
+    .hello br{
+        display: none;
+    }
+    .first_page{
+        margin-top: 60px;
+        padding-left: 0;
+    }
+    .first_page span,.first_page h2{
+        font-size: 44px;
+    }
+    .first_page p span, .first_page p{
+        font-size: 16px;
+    }
+    .first_page span:nth-child(5){
+        width: 10px;
+        color: #0000EC;
+    }
+
+}
+
+
+/* --------RESPONSIVE DESIGN----------------- */
+@media screen and (min-width: 1360px) {
+    .first_page span,.first_page h2{
+        font-size: 64px;
+    }
+    .first_page p span{
+        display: inline;
+    }
+    #span2{
+        display: none;
+    }
+    .first_page{
+        margin-top: 120px;
+        margin-bottom: 0;
+    }
+    .first_page button{
+        width: 15.69%;
+        margin-top: 56px;
+        margin-bottom: 5px;
+        height: 56px;
+    }
+    .first_page p{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+}

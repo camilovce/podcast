@@ -1,0 +1,234 @@
+
+.temas h2{
+    margin-top: 48px;
+    margin-bottom: 24px;
+
+}
+.temas h3{
+    width: 288px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    font-family: 'ibm_plex_sansregular';
+    font-size: 24px;
+    font-weight: 600;
+}
+.temas img{
+    width: 104px;
+    margin: auto;
+}
+div.temas div:nth-child(n){
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 52px;
+}
+div.temas div:nth-child(1){
+margin-top: 24px;
+}
+div.temas div:nth-child(2){
+    margin-top: 36px;
+    }
+
+div.temas div:nth-child(4){
+    margin-bottom: 42px;
+    }
+
+.novedades{
+    position: relative;
+    padding: 64px 5% 0px;
+}
+.novedades button{
+    background-color:  #00F3BB;
+    font-family: 'ibm_plex_monomedium';
+    width: 288px;
+    height: 48px;
+    font-size: 16px;
+    margin: auto; 
+    margin-bottom: 67px;
+}
+.novedades div h2{
+    /* margin-top: 64px; */
+    text-align: center;
+}
+.novedades h2{
+    font-family: 'ibm_plex_monoregular';
+    margin: auto;
+    margin-top: 0px;
+    letter-spacing: 0;
+    line-height: 42px;
+    max-width: 100%;
+    font-size: 36px;
+    margin-bottom: 36px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+.novedades span{
+    margin: auto;
+    width: max-content;
+}
+.novedades::after{
+  /*   content: '';
+	width: 100%;
+    position: absolute;
+    height: calc(100% - (100vw * 0.1051));
+    background:linear-gradient(#0000FF, #0000A3);
+	z-index: -1;
+    top: 0;
+    transform-origin: top right;
+    transform: skewY(-6deg); */
+}
+/* **********TEMAS*********** */
+@media screen and (min-width:321px){
+    .temas div:nth-child(n){
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+}
+@media screen  and (min-width:550px){
+    .temas h2{
+        margin-bottom: 0;
+    }
+    div.temas{
+        width: 100vw ;
+    }
+    div.temas div:nth-child(n){
+        width: 50vw;
+        margin: 0 ;
+        flex-direction: row;
+        margin-top: 20px;
+
+    } 
+    .temas div:nth-child(n){
+        flex-direction: row;
+        /* height: 226px; */
+    }
+    .temas img{
+        margin: 0 auto;
+    }
+    .temas h3{
+        margin-top: 29px;
+    }
+}
+
+@media screen  and (min-width:768px){
+
+    .temas{
+        justify-content: center;
+    }
+    div.temas div:nth-child(n){
+        width: 260px;
+        margin-top: 56px;
+    }
+    .temas h2{
+        width: fit-content;
+        margin-top: 64px;
+    }
+}
+
+/***************NOVEDADES******* */
+
+@media screen and (min-width:321px){
+    .novedades h2{
+        margin-top: 14.79vw;
+        margin-bottom: 2.5vw;
+        font-size: 48px;
+        width: fit-content;
+    }
+    .novedades button{
+        margin-bottom: 10.49vw;
+    }
+    .novedades div:nth-child(3){
+        width: auto;
+        text-align: center;
+    }
+}
+@media screen and (min-width:768px){
+    .novedades button{
+        width: 310px;
+    }
+}
+@media screen and (min-width:1366px){
+    .novedades button{
+        width: 345px;
+        font-size: 18px;
+    }
+}
+
+/* ************FOOTER************** */
+.footer{
+    display: grid;
+    grid-template: 1fr max-content/1fr;
+    padding: 2.5px;
+    height: max-content;
+    grid-template-areas:
+        "texto"
+        "iconos";
+    background: #FFFFFF;
+
+}
+
+.footer div:nth-child(1){
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-family: 'ibm_plex_monoregular';
+    font-weight: 500;
+
+}
+.footer div:nth-child(1){
+    display: flex;
+    place-self: center;
+    grid-area: texto;
+    width: max-content;
+    margin-top: 24px;
+}
+.footer div:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: iconos;
+}
+.footer i{
+    font-size: 18px;
+    margin-top: 28px;
+    margin-bottom: 43px;
+}
+
+@media  screen and (min-width:900px){
+    .novedades{
+        overflow: hidden;
+    }
+    .footer{
+        grid-template: 1fr /1fr 1fr;
+        padding:2.5vw 6.94vw 2.15vw;
+        grid-template-areas:
+            "texto iconos";
+            margin-top: 0;
+    }
+    div.footer{
+        font-size: 16px;
+    }
+    .footer i{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .footer div:nth-child(1){
+        margin-top: 0;
+    }
+}
+
+@media  screen and (min-width:1366px){
+    .footer{
+        column-gap: 51.32vw; 
+    }
+    .footer div:nth-child(2){
+
+        justify-content: space-between;
+
+    }   
+}
+.footer i{
+    background: transparent url(https://www.instagram.com/) no-repeat;
+    color: #060A24;
+}

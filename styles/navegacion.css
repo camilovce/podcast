@@ -1,0 +1,185 @@
+/* ************MOBILE*********** */
+.header{
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0.000001px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    z-index: 3;
+}
+/* ************TABLET*********** */
+@media screen and (min-width: 767px) {
+    /* start of medium tablet styles */
+    input{
+        display: none;
+        /* opacity: 0; */
+    }
+    .header{
+        padding: 10px 6.93%;
+    }
+    li{
+        margin-left: 48px;
+    }
+
+}
+/* *******************DESKTOP ********/
+.icon{
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+}
+@media screen and (min-width: 1360px) {
+    .icon{
+        width: 36px;
+        height: 36px;
+    }
+    .header{
+        padding: 22px 6.93%;
+    }
+}
+nav{
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    top: 44px;
+    left: 0;
+    background-color: #0000EC;
+    padding-left: 16px;
+    padding-top: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* CHECKBOX */
+input[type=checkbox]{
+    visibility: hidden;
+    /* opacity: 0; */
+    -moz-appearance:initial;
+    margin-right: 16px;
+
+    /* opacity: 1; */
+
+}
+
+
+input::before{
+    /* -moz-appearance:initial; */
+    font-family: fontawesome;
+    visibility:visible;
+    content: "\f0c9";
+    width: 18px;
+    height: 12px;
+}
+input[type=checkbox]:checked::before{
+    width: 14px;
+    height: 14px;
+    visibility: visible;
+    content: "\f00d";
+}
+.lista{
+    display: none;
+}
+.lista ul{
+    list-style: none;
+    color: black;
+}
+nav li a{
+    font-size: 16px;
+    font-family: 'ibm_plex_monoregular';
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 28px;
+    text-decoration: none;
+  }
+ /********HOVER  */
+ nav li a:hover{
+    color: #00F3BB;
+    text-decoration: line-through;
+ }
+ /* ACTIVE */
+ nav li a:active{
+    color: rgba(6,10,36,0.56);
+    text-decoration: line-through;
+ }
+
+  nav li:nth-child(1){
+    width: 87px;
+  }
+  nav li:nth-child(2){
+    width: 77px;
+  }
+  nav li:nth-child(3){
+    width: 106px;
+  }
+  nav li:nth-child(4){
+    width: 68px;
+  }
+  nav ul li, nav li a {
+    margin-bottom: 24px;
+  }
+
+
+
+
+
+input[type=checkbox]:checked ~ .lista{
+    display: block;
+    position: relative;
+    top: 10px;
+    /* width: 100%; */
+    /* align-self:flex-end; */
+}
+
+/* ------------------DESKTOP ---------------------*/
+
+/* ************TABLET*********** */
+@media screen and (min-width: 767px) {
+    /* start of medium tablet styles */
+    .header .icon{
+        margin-left: 0;
+    }
+    .header{
+        justify-content: space-between;
+        padding: 4px 6.93%;
+    }
+    a{
+        text-decoration: none;
+        color: #060A24;
+    }
+    nav{
+        width: auto;
+        top: auto;
+        left: auto;
+        position: initial;
+        background: initial;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .lista{
+        display: flex;
+
+    }
+
+    nav li a{
+        font-family: 'ibm_plex_monoregular';
+        color: #060A24;
+    }
+}
+
